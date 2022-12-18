@@ -24,4 +24,18 @@ console.log(sumOfValues(['5', 3, '2', 1]))   //5321 its because of the concatnat
 //OR use this ONE LINER
 //implicit return - no return needed
 const s = r => r.reduce((acc, c) => +a + +c) // the plus in the front makes sure its a NUMBER YOU ALSO MUST HAVE space or something
-//or it wont work (a + +c)
+//or it wont work (a + +c)const array1 = [1, 2, 3, 4];
+
+
+
+--------------------------------------------------------
+EXAMPLE FROM MDN BELOW
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+// expected output: 10
